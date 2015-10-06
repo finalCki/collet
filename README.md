@@ -1,23 +1,23 @@
-## Ripple Wallet
+## Divvy Wallet
 
-This is a simple, lightweight tool to generate a new ripple wallet,
+This is a simple, lightweight tool to generate a new divvy wallet,
 which consists of public and secret key components.
 
 Beyond portability, the tool was created to isolate the cryptography
-behind wallet generation in the ripple client and ripple-lib.
+behind wallet generation in the divvy client and divvy-lib.
 
 ### Usage
 
   ```js
-  var rippleLib = require('ripple-lib');
-  var RippleWallet = require('ripple-wallet')({
-    sjcl: rippleLib.sjcl
+  var divvyLib = require('divvy-lib');
+  var DivvyWallet = require('divvy-wallet')({
+    sjcl: divvyLib.sjcl
   });
 
-  RippleWallet.generate();
+  DivvyWallet.generate();
   ```
     
-will generate a random, unfunded Ripple address and secret.
+will generate a random, unfunded Divvy address and secret.
 
   ```js
   { 
@@ -34,6 +34,6 @@ Run the automated test suite, which uses test vectors from the wiki:
 
 ### Algorithm Docs and Test Vectors
 
-A description of the Cryptography can be found on the [Wiki](https://ripple.com/wiki/Account_Family).
+A description of the Cryptography can be found on the [Wiki](https://divvy.com/wiki/Account_Family).
 
   

@@ -1,24 +1,24 @@
 {
-  "name": "ripple-wallet-generator",
+  "name": "divvy-wallet-generator",
   "version": "1.0.3",
-  "description": "A node.js library for generating a Ripple wallet.",
+  "description": "A node.js library for generating a Divvy wallet.",
   "main": "lib/wallet.js",
   "scripts": {
     "test": "mocha -R spec test/wallet_generator.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ripple/ripple-wallet.git"
+    "url": "https://github.com/xdv/divvy-wallet.git"
   },
   "keywords": [
-    "ripple",
+    "divvy",
     "wallet",
     "crypto",
     "elliptic-curve"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ripple/ripple-wallet/issues"
+    "url": "https://github.com/xdv/divvy-wallet/issues"
   },
   "devDependencies": {}
 }

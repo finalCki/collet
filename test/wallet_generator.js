@@ -1,10 +1,10 @@
 var assert = require('assert');
-var sjcl = require('ripple-lib').sjcl;
-var RippleWallet = require(__dirname+'/../lib/wallet.js')({ sjcl: sjcl });
+var sjcl = require('divvy-lib').sjcl;
+var DivvyWallet = require(__dirname+'/../lib/wallet.js')({ sjcl: sjcl });
 var PublicGenerator = require(__dirname+'/../lib/public_generator')({ sjcl: sjcl });
 
-// Test vectors from the Ripple Wiki
-// https://ripple.com/wiki/Account_Family
+// Test vectors from the Divvy Wiki
+// https://divvy.com/wiki/Account_Family
 var MASTER_SEED = '71ED064155FFADFA38782C5E0158CB26';
 var HUMAN_SEED = 'shHM53KPZ87Gwdqarm1bAmPeXg8Tn';
 var PRIVATE_GENERATOR = '7CFBA64F771E93E817E15039215430B53F7401C34931D111EAB3510B22DBB0D8';
@@ -12,10 +12,10 @@ var PUBLIC_GENERATOR = 'fht5yrLWh3P8DrJgQuVNDPQVXGTMyPpgRHFKGQzFQ66o3ssesk3o';
 var PUBLIC_KEY = 'aBRoQibi2jpDofohooFuzZi9nEzKw9Zdfc4ExVNmuXHaJpSPh8uJ';
 var ACCOUNT_ID = 'rhcfR9Cg98qCxHpCcPBmMonbDBXo84wyTn';
 
-describe('generating a ripple account', function() {
+describe('generating a divvy account', function() {
 
   before(function() {
-    wallet = new RippleWallet(HUMAN_SEED);
+    wallet = new DivvyWallet(HUMAN_SEED);
   });
 
   it('should get the master seed from the human readable seed', function() {
@@ -45,7 +45,7 @@ describe('generating a ripple account', function() {
     assert.strictEqual(wallet.getPublicKey().value, PUBLIC_KEY);
   });
 
-  it('should convert the public key to a ripple account address', function() {
+  it('should convert the public key to a divvy account address', function() {
     assert.strictEqual(wallet.getAccountId(), ACCOUNT_ID);
   });
 
