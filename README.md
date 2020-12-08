@@ -36,4 +36,8 @@ Run the automated test suite, which uses test vectors from the wiki:
 
 A description of the Cryptography can be found on the [Wiki](https://wiki.xdv.io/en/Account_Families).
 
+### Notes
+Environment:
+  node.js > 0.10.25
+  mocha@2.5.1
   
