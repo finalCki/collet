@@ -1,5 +1,5 @@
 {
-  "name": "divvy-wallet-generator",
+  "name": "divvy-wallet,
   "version": "1.0.3",
   "description": "A node.js library for generating a Divvy wallet.",
   "main": "lib/wallet.js",
