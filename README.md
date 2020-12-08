@@ -34,6 +34,6 @@ Run the automated test suite, which uses test vectors from the wiki:
 
 ### Algorithm Docs and Test Vectors
 
-A description of the Cryptography can be found on the [Wiki](https://wiki.xdv.io/Account_Family).
+A description of the Cryptography can be found on the [Wiki](https://wiki.xdv.io/en/Account_Families).
 
   
