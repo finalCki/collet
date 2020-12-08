@@ -1,5 +1,5 @@
 {
-  "name": "divvy-wallet,
+  "name": "divvy-wallet",
   "version": "1.0.3",
   "description": "A node.js library for generating a Divvy wallet.",
   "main": "lib/wallet.js",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/xdv/divvy-wallet/issues"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }
